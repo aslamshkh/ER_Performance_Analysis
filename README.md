@@ -20,16 +20,16 @@ We need to creat a hospital emergency room analysis dashboard. This dashboard wi
 ## KPIs
 
 ### Primary
-1. Number of Patients: Total number of visits to the ER everyday.
-2. Average Wait Time: Find the average wait time to attend the patient.
-3. Patient Satisfaction Score: Find average satisfaction score to access the service quality.
+* Number of Patients: Total number of visits to the ER everyday.
+* Average Wait Time: Find the average wait time to attend the patient.
+* Patient Satisfaction Score: Find average satisfaction score to access the service quality.
 
 ### Secondry
-1. Patient admission status: how many were admitted vs not admitted.
-2. Patient age distribution: Goupe patients age for the age wise analysis.
-3. Wait time analysis: Howmany paitents were attended with 30mints and beyond.
-4. Gender Analysis: Number of patients based on gender (Male/Female).
-5. Department Referrals: Which department referred maximum referrals.
+* Patient admission status: how many were admitted vs not admitted.
+* Patient age distribution: Goupe patients age for the age wise analysis.
+* Wait time analysis: Howmany paitents were attended with 30mints and beyond.
+* Gender Analysis: Number of patients based on gender (Male/Female).
+* Department Referrals: Which department referred maximum referrals.
 
 ## Data Overview
 

@@ -7,38 +7,38 @@ We need to creat a hospital emergency room analysis dashboard. This dashboard wi
 # KPIs
 
 Primary
-1. Number of Patients: Total number of visits to the ER everyday.
-2. Average Wait Time: Find the average wait time to attend the patient.
-3. Patient Satisfaction Score: Find average satisfaction score to access the service quality.
+ * Number of Patients: Total number of visits to the ER everyday.
+ * Average Wait Time: Find the average wait time to attend the patient.
+ * Patient Satisfaction Score: Find average satisfaction score to access the service quality.
 
 Secondry
-1. Patient admission status: how many were admitted vs not admitted.
-2. Patient age distribution: Goupe patients age for the age wise analysis.
-3. Wait time analysis: Howmany paitents were attended with 30mints and beyond.
-4. Gender Analysis: Number of patients based on gender (Male/Female).
-5. Department Referrals: Which department referred maximum referrals.
+ * Patient admission status: how many were admitted vs not admitted.
+ * Patient age distribution: Goupe patients age for the age wise analysis.
+ * Wait time analysis: Howmany paitents were attended with 30mints and beyond.
+ * Gender Analysis: Number of patients based on gender (Male/Female).
+ * Department Referrals: Which department referred maximum referrals.
 
 # Raw Data
 
-1. The data was downloaded from
-2. The file has 11 columns and 9217 rows including the header.
+ * The raw data [file](https://github.com/aslamshkh/Hospital-Emergency-Room-Analysis/commit/69c320f88452019305ad622f16239c6011a4665e) was downloaded from a GitHub [repositry](https://raw.githubusercontent.com/SatishDhawale/Hospital_Emergency_Room_Dashboard/refs/heads/main/Hospital%20Emergency%20Room%20Data.csv)
+ * The file has 11 columns and 9217 rows including the header.
 
 # Observation
 
-1. Patients Date column had date and time together. As we do not have any use of time as per the KIP, will split and remove the time.
-2. Patient first name column just has name innitials along with a seperate column with the last name. Hence, will merge them for easy use.
-3. Patient gender column needs normalisation as it has inconsistant values like Male, Female, M, and F.
-4. Patient age column must have another column with the age group as per the KPI requirement.
-5. Patient admission flag columns has test values line True/Fales that needs to be convertend into admitted or not admitted.
-6. Patients wait time column must have another column indicating how many of them were attended within 30mints and beyond for the KPI analysis.
-7. Patient wait time column as a duplicate column which must be removed.
-8. Department referral column has "None" values that neither be pupulated nor can be removed. Hence, keeping them as is.
-9. Patient satisfaction score column has blank cells too which neither be populated nor deleted. Hence, keeping it as is. 
+ * Patients Date column had date and time together. As we do not have any use of time as per the KIP, will split and remove the time.
+ * Patient first name column just has name innitials along with a seperate column with the last name. Hence, will merge them for easy use.
+ * Patient gender column needs normalisation as it has inconsistant values like Male, Female, M, and F.
+ * Patient age column must have another column with the age group as per the KPI requirement.
+ * Patient admission flag columns has test values line True/Fales that needs to be convertend into admitted or not admitted.
+ * Patients wait time column must have another column indicating how many of them were attended within 30mints and beyond for the KPI analysis.
+ * Patient wait time column as a duplicate column which must be removed.
+ * Department referral column has "None" values that neither be pupulated nor can be removed. Hence, keeping them as is.
+ * Patient satisfaction score column has blank cells too which neither be populated nor deleted. Hence, keeping it as is. 
 
 # Data Loading
 
-1. Importing the CSV file through Data Tab > Get Data> From File > From Text/CSV.
-2. Check the details in Navigator Box and Transform Data to cleaning and preperation.
+ * Importing the CSV file through Data Tab > Get Data> From File > From Text/CSV.
+ * Check the details in Navigator Box and Transform Data to cleaning and preperation.
 
 # Data Cleaning And Transformation
 
@@ -80,6 +80,7 @@ Secondry
 6. Patient Age Group Creation:
  
   * Created new column by using Conditional Column option from Add Column tab (If and Else).
+ ![image](https://github.com/aslamshkh/Hospital-Emergency-Room-Analysis/blob/main/Conditional%20Column%20Creation.png)
 
 7. Patient Admision Correction:
 
@@ -89,25 +90,27 @@ Secondry
 
    * Used Customer Column option under Add Column and created the categorisation.
    * Checked the data type and named the column.
-  
+  ![image](https://github.com/aslamshkh/Hospital-Emergency-Room-Analysis/blob/main/Waittime%20Categorisation.png)
+
 9. Duplicate Column:
 
    * Removed duplicate Patient Admission Flag column by Removed Column option under the Home Tab.
   
 # EDA (Exploratory Data Analysis)
 
-1. Created Pivot Table from Data Model.
-2. Put all the tables in the Details Sheet along with all the charts.
+ * Created Pivot Table from Data Model.
+ * Put all the tables in the Details Sheet along with all the charts.
 
 
 # Dashboard Layout Creation
 
-1. Page zoom braught to 100%.
-2. Removed the gridlines.
-3. Gave dark colour to the background to use light coloured shape.
+![image](https://github.com/aslamshkh/Hospital-Emergency-Room-Analysis/blob/main/Dashboard%20Layout.png)
 
+ * Page zoom braught to 100%.
+ * Removed the gridlines.
+ * Gave dark colour to the background to use light coloured shape.
 
-  
+![image](https://github.com/aslamshkh/Hospital-Emergency-Room-Analysis/blob/main/Hospital%20Emergency%20Room%20Dashboard.png)
 
 
    

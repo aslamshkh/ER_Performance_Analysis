@@ -160,8 +160,7 @@ The dashboard was built in Excel with a clean, high-contrast design for better r
 
 All visuals were arranged logically to guide the reader from big-picture metrics to deeper operational patterns.
   
-   ![image](https://github.com/aslamshkh/Hospital-Emergency-Room-Analysis/blob/main/Dashboard%20Layout.png)
-
+   
    ![image](https://github.com/aslamshkh/Hospital-Emergency-Room-Analysis/blob/main/Hospital%20Emergency%20Room%20Dashboard.png)
 
 

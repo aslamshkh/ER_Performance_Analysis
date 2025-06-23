@@ -15,7 +15,10 @@
 ## Purpose
 
 
-In the fast-paced environment of a hospital emergency room, every second counts. This project delivers a focused data analytics dashboard built in Excel to reveal actionable insights on patient flow, wait times, and service quality. Designed with hospital decision-makers in mind, the dashboard turns raw data into clarity, supporting better care, smarter resource allocation, and quicker response strategies where it matters most.
+In the high-pressure setting of a hospital emergency room, data-driven decisions can mean the difference between delay and decisive action. This project delivers a fully interactive analytics dashboard built exclusively in Microsoft Excel, using a powerful combination of Power Query, Power Pivot, DAX formulas, and PivotTables to uncover insights into patient flow, wait times, and service quality.
+
+Designed with hospital decision-makers in mind, the dashboard transforms raw, unstructured data into a clear, filterable interface—supporting smarter resource allocation, improved triage strategies, and a deeper understanding of patient experience. All features were developed using Excel's built-in capabilities, making this solution scalable and accessible without the need for external BI platforms.
+
 
 ## Performance Indicators
 

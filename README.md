@@ -75,19 +75,34 @@ During the initial review of the raw dataset, several data quality and formattin
 
 The dataset underwent several cleaning and transformation steps in Power Query to ensure consistency, accuracy, and alignment with the project’s KPIs:
 
-- **Error and Column Quality Check**
+<details>
+<summary><strong>1. Error and Column Quality Check</strong></summary>
+
+<br>
+
   - Used the Column Quality feature under the View tab to identify errors and missing values.
   - Found blanks in the Patient Satisfaction Score column. These were retained to preserve data integrity.
+</details>
 
-- **Splitting Admission Date and Time**
+    
+<details>
+<summary><strong>2. Splitting Admission Date and Time</strong></summary>
+
+<br>
+
   - The Patient Admission Date column contained both date and time.
   - Used: Transform tab → Split Column → By Delimiter → Custom delimiter: space → Split at each occurrence.
   - Removed the time column, as it was not required for analysis.
+</details>
 
-- **Date Calendar Creation**
+<details>
+<summary><strong>3. Date Calendar Creation</strong></summary>
+
+<br>
+
   - Created a dynamic Date Calendar using a blank query: Home → New Source → Other Sources → Blank Query
   - Applied the formula:
-    
+
   ```= List.Dates(#date(2023, 01, 01), 731, #duration(1, 0, 0, 0))```
   
   - #date(2023, 01, 01): Start date.
@@ -97,28 +112,59 @@ The dataset underwent several cleaning and transformation steps in Power Query t
   - Renamed the column and query to Date Calendar, set the data type to Date.
   - Loaded it as a connection-only query and added it to the data model.
   - Created a relationship with the fact table using Manage Data Model in Diagram View.
+</details>
+    
+<details>
+<summary><strong>4. Merging Name Columns</strong></summary>
 
-- **Merging Name Columns**
+<br>
+
   - Merged First Name and Last Name using: Transform tab → Merge Columns → Separator: Custom (. ) → Result: e.g., H. Hamilton
   - Renamed the new column to Full Name.
+</details>
 
-- **Gender Normalization**
+<details>
+<summary><strong>5. Gender Normalization</strong></summary>
+
+<br>
+
   - Standardized inconsistent gender values (M, F, Male, Female) using Replace Values in the Transform tab.
+</details>
 
-- **Creating Age Groups**
+<details>
+<summary><strong>6. Creating Age Groups</strong></summary>
+
+<br>
+
   - Added a new column using Add Column → Conditional Column to group patients by age brackets.
     ![image](https://github.com/aslamshkh/Hospital-Emergency-Room-Analysis/blob/main/Conditional%20Column%20Creation.png)
+</details>
 
-- **Admission Status Formatting**
+<details>
+<summary><strong>7. Admission Status Formatting</strong></summary>
+
+<br>
+
   - Converted the Admission Flag column from Boolean to Text.
   - Replaced True with Admitted and False with Not Admitted.
+</details>
 
-- **Wait Time Categorization**
+<details>
+<summary><strong>8. Wait Time Categorization</strong></summary>
+
+<br>
+
   - Created a new column using Add Column → Custom Column to classify patients based on whether they were attended within or beyond 30 minutes.
     ![image](https://github.com/aslamshkh/Hospital-Emergency-Room-Analysis/blob/main/Waittime%20Categorisation.png)
+</details>
 
-- **Removing Duplicate Columns**
+<details>
+<summary><strong>9. Removing Duplicate Columns</strong></summary>
+
+<br>
+
   - Identified and removed a duplicate Admission Flag column using Remove Columns under the Home tab.
+</details>
 
  
 ## Data Exploration And Key Insights

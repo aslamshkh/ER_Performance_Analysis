@@ -1,10 +1,23 @@
-# Hospital-Emergency-Room-Analysis
+# Hospital Emergency Room Analysis
 
-# Purpose
+### The Table Of Contents
+
+- [Project Overview](#project-overview)
+- [Purpose](#purpose)
+- [KPI](#kpi)
+- [Data Overview](#data-overview)
+- [Observation](#observation)
+- [Data Loading](#data-loading)
+- [Data Cleaning And Transformation](#data-cleaning-and-transformation)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Dashboard Layout Creation](#dashboard-layout-creation)
+- [Dashboard](#dashboard)
+  
+### Purpose
 
 We need to creat a hospital emergency room analysis dashboard. This dashboard will help stakeholders to monitor, analise and improve hospital services. 
 
-# KPIs
+### KPIs
 
 Primary
 1. Number of Patients: Total number of visits to the ER everyday.
@@ -18,12 +31,12 @@ Secondry
 4. Gender Analysis: Number of patients based on gender (Male/Female).
 5. Department Referrals: Which department referred maximum referrals.
 
-# Raw Data
+### Data Overview
 
 1. The data was downloaded from
 2. The file has 11 columns and 9217 rows including the header.
 
-# Observation
+### Observation
 
 1. Patients Date column had date and time together. As we do not have any use of time as per the KIP, will split and remove the time.
 2. Patient first name column just has name innitials along with a seperate column with the last name. Hence, will merge them for easy use.
@@ -35,12 +48,12 @@ Secondry
 8. Department referral column has "None" values that neither be pupulated nor can be removed. Hence, keeping them as is.
 9. Patient satisfaction score column has blank cells too which neither be populated nor deleted. Hence, keeping it as is. 
 
-# Data Loading
+## Data Loading
 
 1. Importing the CSV file through Data Tab > Get Data> From File > From Text/CSV.
 2. Check the details in Navigator Box and Transform Data to cleaning and preperation.
 
-# Data Cleaning And Transformation
+### Data Cleaning And Transformation
 
 1. Error and Column Quality:
 
@@ -94,19 +107,19 @@ Secondry
 
    * Removed duplicate Patient Admission Flag column by Removed Column option under the Home Tab.
   
-# EDA (Exploratory Data Analysis)
+### Exploratory Data Analysis
 
 1. Created Pivot Table from Data Model.
 2. Put all the tables in the Details Sheet along with all the charts.
 
 
-# Dashboard Layout Creation
+### Dashboard Layout Creation
 
 1. Page zoom braught to 100%.
 2. Removed the gridlines.
 3. Gave dark colour to the background to use light coloured shape.
 
-
+### Dashboard
   
 
 

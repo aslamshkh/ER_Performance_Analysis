@@ -1,4 +1,4 @@
-# Hospital Emergency Room Analysis
+# 🏥 Hospital Emergency Room Analysis
 
 ## The Table Of Contents
 
@@ -11,6 +11,7 @@
 - [Data Exploration And Key Insights](#data-exploration-and-key-insights)
 - [Dashboard Creation](#dashboard-creation)
 
+---
 
 ## Purpose
 
@@ -19,6 +20,7 @@ In the high-pressure setting of a hospital emergency room, data-driven decisions
 
 Designed with hospital decision-makers in mind, the dashboard transforms raw, unstructured data into a clear, filterable interface—supporting smarter resource allocation, improved triage strategies, and a deeper understanding of patient experience. All features were developed using Excel's built-in capabilities, making this solution scalable and accessible without the need for external BI platforms.
 
+---
 
 ## Performance Indicators
 
@@ -35,9 +37,13 @@ Designed with hospital decision-makers in mind, the dashboard transforms raw, un
   - **Gender Distribution**: Total patient count segmented by gender (Male/Female).
   - **Department Referrals**: Identification of departments generating the highest number of ER referrals.
 
+---
+
 ## Data Overview
 
 This project is based on a publicly available dataset sourced from this GitHub [repository](https://raw.githubusercontent.com/SatishDhawale/Hospital_Emergency_Room_Dashboard/refs/heads/main/Hospital%20Emergency%20Room%20Data.csv). The dataset contains 9,217 records and 11 columns, each representing key attributes of emergency room visits such as patient demographics, wait times, admission status, and satisfaction scores.
+
+---
 
 ### Dataset Summary
  - Source: Original GitHub commit
@@ -46,6 +52,7 @@ This project is based on a publicly available dataset sourced from this GitHub [
  - Columns: 11
  - Time Period Covered: April 2023 to October 2024 (based on admission dates)
 
+---
 
 ## Initial Data Observations
 
@@ -63,11 +70,15 @@ During the initial review of the raw dataset, several data quality and formattin
  - Satisfaction Scores: The Patient Satisfaction Score column included blank entries in multiple rows.
 
 
+---
+
 
 ## Data Loading
  - The dataset was imported into Excel using the following path: Data tab → Get Data → From File → From Text/CSV.
  - In the Navigator window, the file preview was verified to ensure correct column alignment and data types.
  - The data was then loaded into Power Query Editor for cleaning and transformation before being added to the data model.
+
+---
 
 
 ## Data Cleaning and Transformation
@@ -166,6 +177,8 @@ The dataset underwent several cleaning and transformation steps in Power Query t
   - Identified and removed a duplicate Admission Flag column using Remove Columns under the Home tab.
 </details>
 
+---
+
  
 ## Data Exploration And Key Insights
 
@@ -188,6 +201,7 @@ After cleaning and transforming the dataset in Power Query, I used PivotTables b
 > [!WARNING]
 > Some patients had recorded wait times exceeding 180 minutes, which might be considered unusually long. As this is an independently executed project with no external source verification, these values have been left untouched and are reported as-is for transparency.
 
+---
 
 ## Dashboard Creation
 

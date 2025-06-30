@@ -1,6 +1,6 @@
 # 🏥 Hospital Emergency Room Analysis
 
-## The Table Of Contents
+## 📑 The Table Of Contents
 
 - [Purpose](#purpose)
 - [Performance Indicators](#performance-indicators)
@@ -13,7 +13,7 @@
 
 ---
 
-## Purpose
+## 🎯 Purpose
 
 
 In the high-pressure setting of a hospital emergency room, data-driven decisions can mean the difference between delay and decisive action. This project delivers a fully interactive analytics dashboard built exclusively in Microsoft Excel, using a powerful combination of Power Query, Power Pivot, DAX formulas, and PivotTables to uncover insights into patient flow, wait times, and service quality.
@@ -22,7 +22,7 @@ Designed with hospital decision-makers in mind, the dashboard transforms raw, un
 
 ---
 
-## Performance Indicators
+## 📊 Performance Indicators
 
 
 ### Primary
@@ -39,13 +39,13 @@ Designed with hospital decision-makers in mind, the dashboard transforms raw, un
 
 ---
 
-## Data Overview
+## 📁 Data Overview
 
 This project is based on a publicly available dataset sourced from this GitHub [repository](https://raw.githubusercontent.com/SatishDhawale/Hospital_Emergency_Room_Dashboard/refs/heads/main/Hospital%20Emergency%20Room%20Data.csv). The dataset contains 9,217 records and 11 columns, each representing key attributes of emergency room visits such as patient demographics, wait times, admission status, and satisfaction scores.
 
 ---
 
-### Dataset Summary
+### 🧾 Dataset Summary
  - Source: Original GitHub commit
  - Format: CSV (Comma-Separated Values)
  - Rows: 9,217 (including header)
@@ -54,7 +54,7 @@ This project is based on a publicly available dataset sourced from this GitHub [
 
 ---
 
-## Initial Data Observations
+## 🔍 Initial Data Observations
 
 
 During the initial review of the raw dataset, several data quality and formatting issues were identified that required transformation for accurate analysis:
@@ -73,7 +73,7 @@ During the initial review of the raw dataset, several data quality and formattin
 ---
 
 
-## Data Loading
+## 📥 Data Loading
  - The dataset was imported into Excel using the following path: Data tab → Get Data → From File → From Text/CSV.
  - In the Navigator window, the file preview was verified to ensure correct column alignment and data types.
  - The data was then loaded into Power Query Editor for cleaning and transformation before being added to the data model.
@@ -81,7 +81,7 @@ During the initial review of the raw dataset, several data quality and formattin
 ---
 
 
-## Data Cleaning and Transformation
+## 🧹 Data Cleaning and Transformation
 
 
 The dataset underwent several cleaning and transformation steps in Power Query to ensure consistency, accuracy, and alignment with the project’s KPIs:
@@ -180,7 +180,7 @@ The dataset underwent several cleaning and transformation steps in Power Query t
 ---
 
  
-## Data Exploration And Key Insights
+## 💡 Data Exploration And Key Insights
 
 
 After cleaning and transforming the dataset in Power Query, I used PivotTables built from the Power Pivot data model to explore core metrics related to patient flow, wait time efficiency, satisfaction, and referral patterns. These findings shaped the KPI selection and dashboard layout, turning raw observations into actionable insights.
@@ -203,7 +203,7 @@ After cleaning and transforming the dataset in Power Query, I used PivotTables b
 
 ---
 
-## Dashboard Creation
+## 🛠️ Dashboard Creation
 
 
 The dashboard was built in Excel with a clean, high-contrast design for better readability and user interaction. Key formatting steps included:
